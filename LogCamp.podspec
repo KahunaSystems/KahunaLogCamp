@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LogCamp"
-  s.version      = "0.0.1"
+  s.version      = "3.2.0"
   s.summary      = "LogCamp for Kahuna Logger Library"
 
   s.description  = <<-DESC
