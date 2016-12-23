@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    LogCamp is used to manage 1. Analytics 2. Session 3. Logs 4. App Distributions and many more
 		    DESC
 
-  s.homepage     = "http://google.com"
+  s.homepage     = "https://github.com/PrasadPotale/KahunaLogCamp/blob/master/README.md"
 
   s.license      = 'MIT'
 
