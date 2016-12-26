@@ -24,16 +24,6 @@ KALogger.startSessionWithAppId("APP_ID", andAppKey: "APP_KEY", andServerUrl: "SE
 
 By default it will use LogCamp API server url.
 
-## Add Ratings / Feedback
-
-KALogger.addRatings(RATINGS_NUMBER, summary: "RATINGS_SUMMARY", comment: "RATINGS_COMMENT", userId: "USERID / USEREMAIL", username: "USERNAME", imagePaths: ARRAY_OF_IMAGES)
- 
- E.g. KALogger.addRatings(NSNumber(double: 4.0), summary: "Test Ratings", comment: "Test Comment", userId: "user@email.com", username: "Test User", imagePaths: ["image local directory path"])
- 
-## Add Events
- 
- KALogger.logEvent("EVENT_NAME", withParameters: ["Key1":"Value1", "Key2":"Value2"])
-
 ## Add Web Service Logs
 
 To log webservice failure's
@@ -50,5 +40,13 @@ KALogger.sendTimeStampLogsToServerForServiceType("SERVICE_TYPE", responseStatus:
  
  E.g. :   KALogger.sendTimeStampLogsToServerForServiceType("Login", responseStatus: "Success", mobileRequestStartTime: "2016-11-16T17:03:45", mobileResponseReceiveTime: "2016-11-16T17:03:49", mobileServiceParseTime: "2016-11-16T17:03:49", serverRequestReceiveTime: "2016-11-16T17:03:45", serverResponseStartTime: "2016-11-16T17:03:47")
  
+## Add Ratings / Feedback
+
+KALogger.addRatings(RATINGS_NUMBER, summary: "RATINGS_SUMMARY", comment: "RATINGS_COMMENT", userId: "USERID / USEREMAIL", username: "USERNAME", imagePaths: ARRAY_OF_IMAGES)
  
+ E.g. KALogger.addRatings(NSNumber(double: 4.0), summary: "Test Ratings", comment: "Test Comment", userId: "user@email.com", username: "Test User", imagePaths: ["image local directory path"])
+ 
+## Add Events
+ 
+ KALogger.logEvent("EVENT_NAME", withParameters: ["Key1":"Value1", "Key2":"Value2"])
 
