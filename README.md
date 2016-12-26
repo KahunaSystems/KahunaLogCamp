@@ -30,7 +30,7 @@ KALogger.addRatings(RATINGS_NUMBER, summary: "RATINGS_SUMMARY", comment: "RATING
  
  E.g. KALogger.addRatings(NSNumber(double: 4.0), summary: "Test Ratings", comment: "Test Comment", userId: "user@email.com", username: "Test User", imagePaths: ["image local directory path"])
  
- ## Add Events
+## Add Events
  
  KALogger.logEvent("EVENT_NAME", withParameters: ["Key1":"Value1", "Key2":"Value2"])
 
