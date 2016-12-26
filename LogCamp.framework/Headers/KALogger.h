@@ -119,6 +119,13 @@
 
 + (void)setLogLevel:(int)logLevel;
 
+/*
+ For Objective-C based projects you can directly use KLog("Message");
+ For Swift based projects you need to use below method as #defines not supported in swift
+ */
+
++ (void)log:(NSString*)message;
+
 
 + (NSString*)addRatings:(NSNumber*)rating summary:(NSString*)summary comment:(NSString*)comment userId:(NSString*)userId username:(NSString*)userName imagePaths:(NSArray*)imagePaths;
 
@@ -144,7 +151,14 @@
                       userName:(NSString*)userName
                                 errorCode:(NSNumber*)code;
 /*
- Send Time Staps to server
+ Send Logs To Server
+ @param ServiceType : Service Type
+ @param responseStatus : Response Status
+ @param mobileRequestStartTime : Mobile Request Start Time
+ @param mobileResponseReceiveTime : Mobile Response Start Time
+ @param mobileServiceParseTime : Mobile Service Parsing Time
+ @param serverRequestReceiveTime : Server Request Recieve Time
+ @param serverResponseStartTime : Server Response Start Time
  */
 + (void)sendTimeStampLogsToServerForServiceType:(NSString*)serviceType
                                  responseStatus:(NSString*)responseStatus
