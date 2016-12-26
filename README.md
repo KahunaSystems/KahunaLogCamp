@@ -1,5 +1,5 @@
 # KahunaLogCamp
 
-![LogCamp](https://www.kahunasystems.com/wp-content/uploads/2016/04/logo.png)
+![LogCamp](http://www.kahuna-mobihub.com/templates/ja_puresite/images/logo-trans.png)
 
 LogCamp is analytics and logger library written in Objective-C
