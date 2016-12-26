@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'LogCamp.framework'
   
-  s.resources = "LogCamp.framework/*.plist"
+  # s.resources = "LogCamp.framework/*.plist"
 
   s.public_header_files = "LogCamp.framework/Headers/**/*.h"
 
@@ -32,5 +32,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+  
+  s.dependency 'PLCrashReporter-DynamicFramework'
   	
 end
