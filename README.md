@@ -36,9 +36,9 @@ E.g. :  KALogger.sendDeviceLogsToServerWithRequest("Sample Request Format", with
 
 To log timestamp details of webservice
 
- KALogger.sendTimeStampLogsToServerForServiceType("SERVICE_TYPE", responseStatus: "SUCCESS / FAILURE / UNKNOWN", mobileRequestStartTime: "2016-11-16T17:03:45", mobileResponseReceiveTime: "2016-11-16T17:03:45", mobileServiceParseTime: "2016-11-16T17:03:45", serverRequestReceiveTime: "2016-11-16T17:03:45", serverResponseStartTime: "2016-11-16T17:03:45");
+ KALogger.sendTimeStampLogsToServerForServiceType("SERVICE_TYPE", responseStatus: "SUCCESS / FAILURE / UNKNOWN", mobileRequestStartTime: "2016-11-16T17:03:45", mobileResponseReceiveTime: "2016-11-16T17:03:45", mobileServiceParseTime: "2016-11-16T17:03:45", serverRequestReceiveTime: "2016-11-16T17:03:45", serverResponseStartTime: "2016-11-16T17:03:45")
  
- E.g. :   KALogger.sendTimeStampLogsToServerForServiceType("Login", responseStatus: "Success", mobileRequestStartTime: "2016-11-16T17:03:45", mobileResponseReceiveTime: "2016-11-16T17:03:49", mobileServiceParseTime: "2016-11-16T17:03:49", serverRequestReceiveTime: "2016-11-16T17:03:45", serverResponseStartTime: "2016-11-16T17:03:47");
+ E.g. :   KALogger.sendTimeStampLogsToServerForServiceType("Login", responseStatus: "Success", mobileRequestStartTime: "2016-11-16T17:03:45", mobileResponseReceiveTime: "2016-11-16T17:03:49", mobileServiceParseTime: "2016-11-16T17:03:49", serverRequestReceiveTime: "2016-11-16T17:03:45", serverResponseStartTime: "2016-11-16T17:03:47")
  
  ## Add Ratings / Feedback
 
