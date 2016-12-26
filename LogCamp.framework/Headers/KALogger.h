@@ -49,7 +49,7 @@
  Writes lattitude and longitude information
  */
 
-+ (void)writeLattitude:(double)lattitude:(double)longitude;
++ (void)writeLattitude:(double)latitude andLongitude:(double)longitude;
 
 
 
@@ -127,9 +127,22 @@
 + (void)log:(NSString*)message;
 
 
+/*
+ To add ratings / feedback
+ @param rating : Number value from 1-5
+ @param summary : Summary details of rating
+ @param comment : Comment added by user
+ @param userID : user id added this comment E.g. it can be email id or actual user id
+ @param userName : username of the use it can be email or user name
+ @param imagePaths : Array of images that can be uploaded with rating / feedback
+ @return Webservice response
+ */
 + (NSString*)addRatings:(NSNumber*)rating summary:(NSString*)summary comment:(NSString*)comment userId:(NSString*)userId username:(NSString*)userName imagePaths:(NSArray*)imagePaths;
 
 
+/*
+  @return App Current Ratings Details
+ */
 + (NSString*)getCurrentAppAverageRating;
 
 /*
@@ -167,9 +180,15 @@
                          mobileServiceParseTime:(NSString*)mobileServiceParseTime
                        serverRequestReceiveTime:(NSString*)serverRequestReceiveTime
                         serverResponseStartTime:(NSString*)serverResponseStartTime;
-
+/*
+ Enable / Disable Device Logs
+ Default Value: True
+ */
 + (void)enableServiceLogs:(BOOL)result;
 
+/*Enable / Disable profile / time stamp logs
+ Default Value: False
+ */
 + (void)enableProfileLogs:(BOOL)result;
 
 @end
