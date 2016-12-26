@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics'
 
   s.vendored_frameworks = 'LogCamp.framework'
+  
+  s.resources = "LogCamp.framework/*.plist"
 
   s.public_header_files = "LogCamp.framework/Headers/**/*.h"
 
