@@ -22,6 +22,8 @@ pod 'LogCamp', :git => 'https://github.com/PrasadPotale/KahunaLogCamp.git', :tag
 KALogger.startSessionWithAppId("APP_ID", andAppKey: "APP_KEY", andServerUrl: "SERVER_URL")
 ```
 
+Note: Add #import <LogCamp/KahunaAnalytics.h> into PROJECT_NAME-Bridging-Header.h file
+
 ### Objective-C Code:
 
 ```swift
