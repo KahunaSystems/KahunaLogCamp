@@ -72,3 +72,15 @@ To track specific events into app, E.g. User Added Item into Cart, User Clicked 
  KALogger.logEvent("EVENT_NAME", withParameters: ["Key1":"Value1", "Key2":"Value2"])
    ```
 
+## Add Events
+
+To add logs use
+
+ ```swift
+KALogger.log("Test Message")
+   ```
+
+In Objective-C
+ ```swift
+KLog("Test Message");
+   ```
