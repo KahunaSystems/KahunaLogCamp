@@ -12,4 +12,4 @@
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
 #import "DDFileLogger.h"
-//v3.2.6
+//v3.2.5

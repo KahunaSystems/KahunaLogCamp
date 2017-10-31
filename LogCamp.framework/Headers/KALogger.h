@@ -166,7 +166,6 @@ typedef void(^KAAPIResponseParser)(NSString *dictStr, NSError *error);
                                  userName:(NSString*)userName
                                 errorCode:(NSNumber*)code
                                completion:(KAAPIResponseParser)completionBlock;
-
 /*
  Send Logs To Server
  @param ServiceType : Service Type
