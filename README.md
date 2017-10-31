@@ -11,7 +11,7 @@ LogCamp is analytics and logger library written in Objective-C
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. 
 
 ```ruby
-pod 'LogCamp', :git => 'https://github.com/PrasadPotale/KahunaLogCamp.git', :tag => ‘3.2.6’
+pod 'LogCamp', :git => 'https://github.com/PrasadPotale/KahunaLogCamp.git', :tag => ‘3.2.7’
 ```
 
 ## Add Logcamp To Project
