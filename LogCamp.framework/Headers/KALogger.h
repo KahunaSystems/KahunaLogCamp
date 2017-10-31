@@ -9,6 +9,8 @@
 //V1.5
 #import <Foundation/Foundation.h>
 
+typedef void(^KAAPIResponseParser)(NSString *dictStr, NSError *error);
+
 @interface KALogger : NSObject
 
 @property (nonatomic,strong) NSString *KLoggerURL;
@@ -159,10 +161,12 @@
  @param appID : AppID
  */
 + (void)sendDeviceLogsToServerWithRequest:(NSString*)request
-                  withResponse:(NSString*)response
-                       urlPath:(NSString*)path
-                      userName:(NSString*)userName
-                                errorCode:(NSNumber*)code;
+                             withResponse:(NSString*)response
+                                  urlPath:(NSString*)path
+                                 userName:(NSString*)userName
+                                errorCode:(NSNumber*)code
+                               completion:(KAAPIResponseParser)completionBlock;
+
 /*
  Send Logs To Server
  @param ServiceType : Service Type
@@ -179,7 +183,9 @@
                       mobileResponseReceiveTime:(NSString*)mobileResponseReceiveTime
                          mobileServiceParseTime:(NSString*)mobileServiceParseTime
                        serverRequestReceiveTime:(NSString*)serverRequestReceiveTime
-                        serverResponseStartTime:(NSString*)serverResponseStartTime;
+                        serverResponseStartTime:(NSString*)serverResponseStartTime
+                                     completion:(KAAPIResponseParser)completionBlock;
+
 /*
  Enable / Disable Device Logs
  Default Value: True
